@@ -98,7 +98,7 @@
 
 	// TGM plugin activation
 	if ( is_admin() ) {
-		require( NM_DIR . '/tgmpa/config.php' );
+		//MEDIEVAL require( NM_DIR . '/tgmpa/config.php' );
 	}
 	
 	// Helper functions
@@ -108,7 +108,7 @@
 	require( NM_DIR . '/post-meta.php' );
 	
 	// Visual composer
-	require( NM_DIR . '/visual-composer/init.php' );
+	//MEDIEVAL require( NM_DIR . '/visual-composer/init.php' );
 	
 	// Custom CSS
 	if ( is_admin() ) {

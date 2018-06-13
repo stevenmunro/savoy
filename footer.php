@@ -73,6 +73,9 @@
                                 <?php endif; ?>
                             </div>
                         </div>
+
+<?php do_action('medieval_footer'); ?>
+
                     </div>
                 </div>
             </footer>
