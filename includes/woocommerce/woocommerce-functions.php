@@ -77,9 +77,11 @@
      *  Shop: Products per page
      */
 	$products_per_page = ( strlen( $nm_theme_options['products_per_page'] ) > 0 ) ? intval( $nm_theme_options['products_per_page'] ) : 12;
-	add_filter( 'loop_shop_per_page', create_function( '$cols', 'return ' . $products_per_page . ';' ), 20 );
+	//MEDIEVAL add_filter( 'loop_shop_per_page', create_function( '$cols', 'return ' . $products_per_page . ';' ), 20 );
     
-    
+    add_filter( 'loop_shop_per_page', function() use ( $products_per_page ) {
+        return $products_per_page;
+    }, 20 );
     
     /*
      *  Shop: Default placeholder product image
