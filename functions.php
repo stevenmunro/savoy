@@ -1,6 +1,6 @@
 <?php
 
-// MEDIEVAL
+// MAINTAINED BY MEDIEVAL
     
 	/* Constants & Globals
 	=============================================================== */
